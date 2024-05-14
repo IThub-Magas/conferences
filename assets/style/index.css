@@ -174,10 +174,70 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
-.cacMyRabotaem__main div {
-    width: 267px;
+.main__block {
+    width: 100%;
+    height: 290px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__block-one {
+    width: 256px;
+    height: 252px;
     font-size: 16px;
-    color: #FFFFFF;
-    line-height: 18.56px;
     font-weight: 400;
+    opacity: .5;
+    color: #FFFFFF;
+    background: transparent;
+}
+
+.main__block-two {
+    width: 450px;
+    height: 252px;
+    background: transparent;
+    border: 2px solid #2B2B2B;
+    border-radius: 10px;
+}
+
+.main__block-two1 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.main__block-two2 {
+    margin-top: auto;
+    padding: 25px;
+}
+
+.steps__item-label {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: normal;
+    color: #fff;
+}
+
+.steps__item-text {
+    color: #fff;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 16px;
+    opacity: .6;
+}
+
+.main__block-tre {
+    width: 450px;
+    height: 252px;
+    background: #2B2B2B;
+    border: 2px solid #2B2B2B;
+    border-radius: 10px;
+}
+
+.main__block-two3 {
+    width: 390px;
+    height: 252px;
+    background: #2B2B2B;
+    border: 2px solid #2B2B2B;
+    border-radius: 10px;
 }
