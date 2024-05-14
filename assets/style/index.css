@@ -2,13 +2,14 @@ header {
     width: 1260px;
     height: 73px;
     border-radius: 60px;
-    z-index: 991;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
-    background: blueviolet;
+    background: #FFFFFF0D;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    
 }
 
 .navbar-header {
@@ -17,9 +18,14 @@ header {
 }
 
 .navbar-header a {
+    transition: all .3s ease;
+}
+
+.navbar-two a {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+    transition: all .3s ease;
 }
 
 .navbar-two {
@@ -29,8 +35,18 @@ header {
 }
 
 .navbar-two a {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
+}
+
+.navbar-header a:hover {
+    color: #6DDCFF;
+    transition: all .3s ease;
+}
+
+.navbar-two a:hover {
+    color: #6DDCFF;
+    transition: all .3s ease;
 }
 
 .header__btn {
@@ -41,4 +57,12 @@ header {
     align-items: center;
     justify-content: center;
     border-radius: 60px;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;  
+    background: url(../images/home/home__banner.jpg);
+    background-size: cover;
+    background-position: center;
 }

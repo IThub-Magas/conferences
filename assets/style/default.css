@@ -11,12 +11,4 @@
 
 body {
     width: 100%;
-    background-color: red;
-}
-
-.container {
-    width: 1512px;
-    height: 100vh;
-    background: #000;
-    margin: 0 auto;
 }
