@@ -229,7 +229,7 @@ header {
 .main__block-tre {
     width: 450px;
     height: 252px;
-    background: #2B2B2B;
+    background: rgba(43, 43, 43, .3);
     border: 2px solid #2B2B2B;
     border-radius: 10px;
 }
@@ -237,7 +237,21 @@ header {
 .main__block-two3 {
     width: 390px;
     height: 252px;
-    background: #2B2B2B;
+    background: rgba(43,43,43,.3);
+    border: 2px solid #2B2B2B;
+    border-radius: 10px;
+}
+.main__block-two4 {
+    width: 390px;
+    height: 252px;
+    background: transparent;
+    border: 2px solid #2B2B2B;
+    border-radius: 10px;
+}
+.main__block-two5 {
+    width: 390px;
+    height: 252px;
+    background: var(--Linear, linear-gradient(98deg, #6ddcff 0, #7f60f9 100%));
     border: 2px solid #2B2B2B;
     border-radius: 10px;
 }
