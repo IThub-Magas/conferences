@@ -7,15 +7,14 @@ header {
     justify-content: space-between; 
     margin: 0 auto; 
     background: #FFFFFF0D;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
     padding: 0 26px;
     position: fixed;
     left: 0;
     right: 0;
     top: 36px;
 }
-
-
 
 .navbar-header {
     display: flex;
@@ -67,7 +66,7 @@ header {
 .home {
     width: 100%;
     height: 100vh;  
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.671) 100%, rgba(0,0,0,0) 100%), url(../images/home/home__banner.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.801) 100%, rgba(0,0,0,0) 100%), url(../images/home/home__banner.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -134,4 +133,51 @@ header {
 }
 .home1-inp::placeholder {
     color: #71717A;
+}
+
+.cacMyRabotaem {
+    width: 100%;
+    height: 100vh;  
+    background: #0D0D0D;
+    margin: 20px 0;
+}
+
+.cacMyRabotaem__main {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.cacMyRabotaem__main p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.09px;
+    letter-spacing: 10%;
+}
+
+.cacMyRabotaem__main h1 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 71.58px;
+    text-transform: uppercase;
+}
+
+.otRaschota {
+    color: transparent;
+    -webkit-text-stroke: 2px #848484; 
+    background-clip: text;
+}
+
+.doVnedrenia {
+    background: var(--Linear, linear-gradient(98deg, #6ddcff 0, #7f60f9 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cacMyRabotaem__main div {
+    width: 267px;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 18.56px;
+    font-weight: 400;
 }
