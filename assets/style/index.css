@@ -1,6 +1,23 @@
 header {
     width: 1260px;
     height: 73px;
-    background: red;
+    backdrop-filter: blur(10px);
+    border-radius: 60px;
+    z-index: 991;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.navbar-header {
+    display: flex;
+    column-gap: 40px;
+}
+
+.navbar-header a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
 }
