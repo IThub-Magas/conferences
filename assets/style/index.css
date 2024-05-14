@@ -1,7 +1,6 @@
 header {
     width: 1260px;
     height: 73px;
-    backdrop-filter: blur(10px);
     border-radius: 60px;
     z-index: 991;
     margin: 0 auto;
@@ -9,6 +8,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
+    background: blueviolet;
 }
 
 .navbar-header {
@@ -20,4 +20,25 @@ header {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+}
+
+.navbar-two {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.navbar-two a {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header__btn {
+    width: 188px;
+    height: 50px;
+    border: 1px solid #6DDCFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
 }
