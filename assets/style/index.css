@@ -255,3 +255,9 @@ header {
     border: 2px solid #2B2B2B;
     border-radius: 10px;
 }
+
+.home__main-absolute {
+    position: absolute;
+    top: 60vh;
+    right: 0;
+}
