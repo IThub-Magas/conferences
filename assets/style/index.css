@@ -262,3 +262,9 @@ header {
     right: 0;
     pointer-events: none;
 }
+
+.number-block.visible {
+    width: 1260px;
+    margin: 0 auto;
+    display: flex;
+}
