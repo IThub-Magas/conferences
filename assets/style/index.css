@@ -67,7 +67,71 @@ header {
 .home {
     width: 100%;
     height: 100vh;  
-    background: linear-gradient(to top, rgba(0,0,0,0.5) 100%, rgba(0,0,0,0) 100%), url(../images/home/home__banner.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.671) 100%, rgba(0,0,0,0) 100%), url(../images/home/home__banner.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.home1 {
+    width: 1260px;
+    height: 451px;
+    margin: 0 auto;
+    position: relative;
+    top: 45%;
+}
+
+.home1 h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.63px;
+}
+
+.home1 h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 71.58px;
+    text-transform: uppercase;
+}
+
+.home1 p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #A1A1AA;
+}
+
+.home1-btn-main {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.home1-btn {
+    width: 202px;
+    height: 60px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, #7F60F9, #6DDCFF);
+}
+
+.home1-btn:hover {
+    opacity: 0.9;
+}
+
+.home1-inp {
+    width: 369px;
+    height: 60px;
+    background: transparent;
+    border: 2px solid #303737;
+    border-radius: 60px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    outline: none;
+    padding: 0 30px;
+}
+.home1-inp::placeholder {
+    color: #71717A;
 }
