@@ -3,4 +3,10 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Gilroy" sans-serif;
+    background: #0D0D0D;
+}
+
+.container {
+    width: 1512px;
+    margin: 0 auto;
 }
