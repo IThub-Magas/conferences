@@ -258,6 +258,7 @@ header {
 
 .home__main-absolute {
     position: absolute;
-    top: 60vh;
+    top: 55vh;
     right: 0;
+    pointer-events: none;
 }
