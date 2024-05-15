@@ -440,3 +440,24 @@ header a{
     top: 92%;
     padding: 0 10px;
 }
+
+.reshenia-block-img {
+    position: relative;
+    background: #080000d2;
+    width: 417px;
+    height: 417px;
+    transition: all .5s ease;
+}
+
+.reshenia-block-img:hover {
+    background: transparent;
+    transition: all .5s ease;
+}
+
+.reshenia-block-img img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
