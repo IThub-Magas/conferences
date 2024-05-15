@@ -376,6 +376,7 @@ header a{
 .reshenia {
     width: 100%;
     margin-top: 120px;
+    position: relative;
 }
 
 .reshenia__text {
@@ -449,15 +450,30 @@ header a{
     transition: all .5s ease;
 }
 
-.reshenia-block-img:hover {
-    background: transparent;
-    transition: all .5s ease;
+.reshenia-block-img img {
+    filter: grayscale(1);
+    -webkit-transition: -webkit-filter .2s linear;
+    transition: -webkit-filter .2s linear;
+    -o-transition: filter .2s linear;
+    transition: filter .2s linear;
+    transition: filter .2s linear, -webkit-filter .2s linear;
+    cursor: pointer;
 }
 
-.reshenia-block-img img {
-    object-fit: cover;
+.reshenia-block-img img:hover {
+    filter: grayscale(0);
+}
+
+.absolute__resh {
     position: absolute;
+    right: 0;
     top: 0;
+    pointer-events: none;
+}
+
+.absolute__resh1 {
+    position: absolute;
     left: 0;
-    z-index: -1;
+    top: 200px;
+    pointer-events: none;
 }
