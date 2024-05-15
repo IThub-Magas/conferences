@@ -109,12 +109,19 @@ main{
     align-items: center;
 }
 
+.main-cards{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+
 .main-card{
     width: 593px;
     /* height: 520px; */
     /* border: 1px solid red; */
     border-bottom: 1px solid #191919;
-    
+    cursor: pointer;
+    user-select: none;
 }
 
 .main-card-img{
@@ -122,10 +129,16 @@ main{
     height: 400px;
     border-radius: 20px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-card-img img{
     width: 590px;
+    height: 100%;
+    filter: grayscale(100%);
+    transition: 0.5s;
 }
 
 .main-card-title{
@@ -143,3 +156,75 @@ main{
     width: 390px;
     margin-bottom: 15px;
 }
+
+.main-card-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-card-podrobnee{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.5s;
+
+    svg{
+        margin-left: 5px;
+        rotate: -40deg;
+        transition: .5s;
+    }
+
+    .main-card-podrobnee-1{
+        overflow: hidden;
+    }
+
+    .main-card-podrobnee-span{
+        /* text-transform: uppercase; */
+        background: linear-gradient(97.56deg, #6DDCFF 0%, #7F60F9 142.2%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: translate(90px);
+        transition: .5s;
+    }
+
+    .main-card-change-color1{
+        stop-color: white;
+    }
+    .main-card-change-color2{
+        stop-color: white;
+    }
+}
+
+.main-card-change-color1{
+    transition: 0.5s;
+}
+.main-card-change-color2{
+    transition: 0.5s;
+}
+
+.main-card:hover{
+
+    .main-card-img img{
+        filter: grayscale(0%);
+        transform: scale(1.03);
+    }
+
+    svg{
+        rotate: 0deg;
+    }
+
+    .main-card-podrobnee-span{
+        transform: translate(0, 0);
+    }
+}
+
+.main-card:hover .main-card-change-color1 {
+    stop-color: #6DDCFF;
+  }
+  
+  .main-card:hover .main-card-change-color2 {
+    stop-color: #7F60F9;
+  }
+  
