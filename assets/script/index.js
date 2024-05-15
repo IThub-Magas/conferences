@@ -16,16 +16,16 @@ $(function() {
 
 $(function() {
     var marquee = $("#marquee1");
-    var contentWidth = marquee.find("span").width();
+    var contentWidth = marquee.find("div").width();
     
     marquee.wrapInner("<div class='marquee-inner'>");
     marquee.find(".marquee-inner").css({
-        "width": "200%", // Увеличиваем ширину в 2 раза для размещения двух копий текста
-        "margin-left": "-100%" // Начинаем с правого края
+        "width": "200%", 
+        "margin-left": "-100%" 
     });
     
     var reset = function() {
-        $(this).css("margin-left", "-100%"); // Возвращаем в начальное положение
+        $(this).css("margin-left", "-100%");
         $(this).animate({ "margin-left": "0%" }, 30000, 'linear', reset);
     };
     
