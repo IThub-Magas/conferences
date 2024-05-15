@@ -7,7 +7,7 @@ header {
     justify-content: space-between; 
     margin: 0 auto; 
     background: #FFFFFF0D;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(14px);
     z-index: 9999;
     padding: 0 26px;
     position: fixed;
@@ -267,4 +267,34 @@ header {
     width: 1260px;
     margin: 0 auto;
     display: flex;
+}
+
+.number-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0 15px 0;
+    border-top: 2px solid #fff;
+    opacity: .2;
+    overflow: hidden;
+}
+
+
+.dlya_kogo {
+    width: 100%;
+    height: 80vh;
+    background: red;
+    margin: 0;
+    overflow: hidden;
+}
+.string{
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 145.08px;
+	width: 3000px;
+    display: flex;
+	padding: 0 10px;
+    color: transparent;
+    -webkit-text-stroke: 2px #848484; 
+    background-clip: text;
 }
