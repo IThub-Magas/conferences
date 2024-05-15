@@ -13,3 +13,21 @@ $(function() {
 	};
 	reset.call(marquee.find("div"));
 });
+
+$(function() {
+    var marquee = $("#marquee1");
+    var contentWidth = marquee.find("span").width();
+    
+    marquee.wrapInner("<div class='marquee-inner'>");
+    marquee.find(".marquee-inner").css({
+        "width": "200%", // Увеличиваем ширину в 2 раза для размещения двух копий текста
+        "margin-left": "-100%" // Начинаем с правого края
+    });
+    
+    var reset = function() {
+        $(this).css("margin-left", "-100%"); // Возвращаем в начальное положение
+        $(this).animate({ "margin-left": "0%" }, 30000, 'linear', reset);
+    };
+    
+    reset.call(marquee.find(".marquee-inner"));
+});
