@@ -4,7 +4,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Gilroy-ExtraBold" sans-serif;
-    color: #FFFFFF;
     text-decoration: none;
     font-family: 'Gilroy', sans-serif;
     list-style: none;
@@ -12,5 +11,6 @@
 
 body {
     width: 100%;
+    color: #FFFFFF;
     background: #0D0D0D;
 }
