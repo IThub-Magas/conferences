@@ -21,6 +21,11 @@ header {
     left: 0;
     right: 0;
     top: 36px;
+
+    a{
+    color: #FFFFFF;
+
+    }
 }
 
 .navbar-header {
@@ -183,6 +188,7 @@ main{
     .main-card-podrobnee-span{
         /* text-transform: uppercase; */
         background: linear-gradient(97.56deg, #6DDCFF 0%, #7F60F9 142.2%);
+        background-clip: border-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transform: translate(90px);
