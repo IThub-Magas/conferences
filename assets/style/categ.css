@@ -116,8 +116,8 @@ main{
 
 .main-cards{
     display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
 }
 
 .main-card{
