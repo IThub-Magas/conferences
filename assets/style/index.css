@@ -624,3 +624,119 @@ header a{
     position: relative;
     top: 160px;
 }
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(29, 29, 29, 0.932);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup_btn-span {
+    text-decoration: underline;
+}
+
+.popup_none {
+    display: none;
+}
+
+.popup__main {
+    position: relative;
+    width: 601px;
+    height: 541px;
+    background: #0D0D0D;
+    border-radius: 7px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup__header h1{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35.31px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.popup__header p {
+    width: 456px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 24px;
+    text-align: center;
+}
+
+.popup_exit {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.popup__main1 {
+    width: 90%;
+    height: 183px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 35%;
+}
+
+.popup__main1 input {
+    outline: none;
+    width: 100%;
+    height: 55px;
+    background: transparent;
+    border-radius: 7px;
+    border: 1px solid #ffffff60;
+    font-size: 16px;
+    color: #fff;
+    line-height: 18.56px;
+    font-weight: 400;
+    padding: 0 20px;
+}
+
+.popup__footer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 75%;
+}
+
+.popup__footer_main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup_btn {
+    width: 100%;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(94deg, #6ddcff -74.85%, #7f60f9 197.71%);
+    font-size: 16px;
+    line-height: 19.09px;
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+}
+
+.popup__footer_main a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 13.92px;
+    font-weight: 400;
+    opacity: .5;
+}

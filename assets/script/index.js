@@ -47,3 +47,13 @@ $(function () {
 	};
 	reset.call(marquee.find("div"));
 });
+
+function popupClose() {
+	let closePop = document.querySelector('.popup_none')
+	closePop.style.display = "none"
+}
+
+function popupBlock() {
+	let closePop = document.querySelector('.popup_none')
+	closePop.style.display = "block"
+}
