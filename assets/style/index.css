@@ -578,3 +578,49 @@ header a{
     top: 30px;
     pointer-events: none;
 }
+
+.sect__map {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/home/home-map.png);
+    background-position-x: 100%;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+}
+
+.sect__map-main {
+    width: 1260px;
+    height: 200px;
+}
+
+.sect__main-text {
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 71.58px;
+    font-weight: 600;
+}
+
+.sect__main1 {
+    background: var(--Linear, linear-gradient(98deg, #6ddcff 0, #7f60f9 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sect__main3 {
+    -webkit-text-fill-color: black;
+    line-height: normal;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px 848484;
+    text-shadow: 1px 1px 0 #848484, -1px -1px 0 #848484, 1px -1px 0 #848484, -1px 1px 0 #848484, 1px 1px 0 #848484;
+} 
+
+.top_map {
+    position: relative;
+    top: 160px;
+}
