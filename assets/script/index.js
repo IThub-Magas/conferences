@@ -57,3 +57,40 @@ function popupBlock() {
 	let closePop = document.querySelector('.popup_none')
 	closePop.style.display = "block"
 }
+
+
+// tg bot
+document.getElementById('submitBtn').addEventListener('click', function () {
+	const name = document.getElementById('name').value;
+	const phone = document.getElementById('phone').value;
+	const email = document.getElementById('email').value;
+
+	const message = `Имя: ${name}\nТелефон: ${phone}\nEmail: ${email}`;
+
+	const token = '7189205807:AAGTw2B8ZOmYynLkNcm7pxlnkUofAokY3Fk';
+	const chat_id = '-1002075224515';
+	const url = `https://api.telegram.org/bot${token}/sendMessage`;
+
+	fetch(url, {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify({
+			chat_id: chat_id,
+			text: message
+		})
+	})
+		.then(response => response.json())
+		.then(data => {
+			if (data.ok) {
+				alert('Сообщение отправлено успешно!');
+			} else {
+				alert('Ошибка при отправке сообщения!');
+			}
+		})
+		.catch(error => {
+			console.error('Ошибка:', error);
+			alert('Ошибка при отправке сообщения!');
+		});
+});
