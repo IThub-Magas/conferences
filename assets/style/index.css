@@ -477,3 +477,87 @@ header a{
     top: 200px;
     pointer-events: none;
 }
+
+.about_home {
+    width: 100%;
+    height: 90vh;
+    margin: 80px 0;
+}
+
+.about_home-main {
+    width: 1260px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_home1 {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+}
+
+.about_home2 {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_home2 div {
+    width: 455px;
+    height: 229px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.about_home2 div h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 71.58px;
+    color: #fff;
+}
+
+.about_home2 div p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    opacity: .8;
+}
+
+.about_home1-block {
+    width: 200px;
+    height: 400px;
+    background: var(--Linear, linear-gradient(98deg, #6ddcff 0, #7f60f9 100%));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.about_home1-block > div > h1 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 66px;
+}
+
+.about_home1-block > div > p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.88px;
+}
+
+.about__two {
+    background: #1A1A1A;
+}
+
+.about_block-3 {
+    background: transparent;
+    border: 2px solid #2B2B2B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
