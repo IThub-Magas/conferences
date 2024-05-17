@@ -61,6 +61,11 @@ const products = [
     },
 ]
 
+for (let index = 0; index < products.length; index++) {
+    let element = products[index].id = index + 1;
+    
+}
+
 products.forEach(element => {
     let mainCard = document.createElement("div")
     mainCard.classList.add("main-card")
@@ -83,7 +88,7 @@ products.forEach(element => {
                             <rect x="29.2646" y="0.824951" width="28.44" height="28.44" transform="rotate(89.7371 29.2646 0.824951)" fill="url(#pattern1_103_757)"/>
                             </mask>
                             <g mask="url(#mask0_103_757)">
-                            <rect x="-39" y="-9" width="100" height="100" fill="url(#paint0_linear_103_757)"/>
+                            <rect x="-39" y="-9" width="100" height="100" fill="url(#paint0_linear_103_757${element.id})"/>
                             </g>
                             <defs>
                             <pattern id="pattern0_103_757" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -92,7 +97,7 @@ products.forEach(element => {
                             <pattern id="pattern1_103_757" patternContentUnits="objectBoundingBox" width="1" height="1">
                             <use xlink:href="#image1_103_757" transform="scale(0.0104167)"/>
                             </pattern>
-                            <linearGradient id="paint0_linear_103_757" x1="-99.5" y1="3.50001" x2="7.20055" y2="-35.717" gradientUnits="userSpaceOnUse">
+                            <linearGradient id="paint0_linear_103_757${element.id}" x1="-99.5" y1="3.50001" x2="7.20055" y2="-35.717" gradientUnits="userSpaceOnUse">
                             <stop class="main-card-change-color1" stop-color="#6DDCFF"/>
                             <stop class="main-card-change-color2" offset="1" stop-color="#7F60F9"/>
                             </linearGradient>
